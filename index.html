@@ -1,0 +1,140 @@
+<!DOCTYPE html lang="en">
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="Shortcut Icon" href="img/QQ截图20161218141728.jpg" type="image/x-icon">
+	<title>使用modernizr</title>
+	<!-- 下面一句代码告诉IE浏览器，IE8/9及以后的版本都会以最高版本IE来渲染页面-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<!--<link rel="stylesheet" href="css_library/foundation.css"/>-->
+	<!--<link rel="stylesheet" href="css_library/normalize.css"/>-->
+	<!--<link rel="stylesheet" href="css_library/font-awesome.css"/>-->
+	<!--<script src="js_library/modernizr-custom.js" type="text/javascript"></script>-->
+	<!--<link rel="stylesheet" href="css_library/bootstrap.css"/>-->
+	<!--<link rel="stylesheet" href="css_library/bootstrap-theme.css"/>-->
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js" type="text/javascript"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/bootstrap-practice5.min.css"/>
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="container">
+		<div class="page-header">
+			<h1>Bootstrap grid examples</h1>
+			<p class="lead">Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
+		</div>
+		<article>
+			<h3>Three equal columns</h3>
+			<p>Get three equal-width columns <strong>starting at desktops and scaling to large desktops</strong>. On mobile devices, tablets and below, the columns will automatically stack.</p>
+			<div class="row">
+				<div class="col-md-4 grid-colume">col-md-4</div>
+				<div class="col-md-4 grid-colume">col-md-4</div>
+				<div class="col-md-4 grid-colume">col-md-4</div>
+			</div>
+			<h3>Three unequal columns</h3>
+			<p>Get three columns <strong>starting at desktops and scaling to large desktops</strong> of various widths. Remember, grid columns should add up to twelve for a single horizontal block. More than that, and columns start stacking no matter the viewport.</p>
+			<div class="row">
+				<div class="col-md-3 grid-colume">col-md-3</div>
+				<div class="col-md-6 grid-colume">col-md-6</div>
+				<div class="col-md-3 grid-colume">col-md-3</div>
+			</div>
+			<h3>Two columns</h3>
+			<p>Get two columns <strong>starting at desktops and scaling to large desktops</strong>.</p>
+			<div class="row">
+				<div class="col-md-8 grid-colume">col-md-8</div>
+				<div class="col-md-4 grid-colume">col-md-4</div>
+			</div>
+			<h3>Full width, single column</h3>
+			<p class="text-muted">No grid classes are necessary for full-width elements.</p>
+		</article>
+		<hr/>
+		<article>
+			<h3>Two columns with two nested columns</h3>
+			<p>Per the documentation, nesting is easy—just put a row of columns within an existing column. This gives you two columns starting at desktops and scaling to large desktops, with another two (equal widths) within the larger column.</p>
+			<p>At mobile device sizes, tablets and down, these columns and their nested columns will stack.</p>
+			<div class="row">
+				<div class="col-md-8 grid-colume">col-md-8
+					<div class="row">
+						<div class="col-md-6 nest-colume">col-md-6</div>
+						<div class="col-md-6 nest-colume">col-md-6</div>
+					</div>
+				</div>
+				<div class="col-md-4 grid-colume">col-md-4</div>
+			</div>
+		</article>
+		<hr/>
+		<article>
+			<h3>Mixed: mobile and desktop</h3>
+			<p>The Bootstrap 3 grid system has four tiers of classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops). You can use nearly any combination of these classes to create more dynamic and flexible layouts.</p>
+			<p>Each tier of classes scales up, meaning if you plan on setting the same widths for xs and sm, you only need to specify xs.</p>
+			<div class="row">
+				<div class="col-xs-12 col-md-8 grid-colume">col-xs-12 col-md-8</div>
+				<div class="col-xs-6 col-md-4 grid-colume">col-xs-6 col-md-4</div>
+			</div>
+			<div class="empty"></div>
+			<div class="row">
+				<div class="col-xs-6 col-md-4 grid-colume">col-xs-6 col-md-4</div>
+				<div class="col-xs-6 col-md-4 grid-colume">col-xs-6 col-md-4</div>
+				<div class="col-xs-6 col-md-4 grid-colume">col-xs-6 col-md-4</div>
+			</div>
+			<div class="empty"></div>
+			<div class="row">
+				<div class="col-xs-6 grid-colume">col-xs-6</div>
+				<div class="col-xs-6 grid-colume">col-xs-6</div>
+			</div>
+		</article>
+		<hr/>
+		<article>
+			<h3>Mixed: mobile, tablet, and desktop</h3>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-lg-8 grid-colume">col-xs-12 col-sm-6 col-lg-8</div>
+				<div class="col-xs-6 col-lg-4 grid-colume">col-xs-6 col-lg-4</div>
+			</div>
+			<div class="empty"></div>
+			<div class="row">
+				<div class="col-xs-6 col-sm-4 grid-colume">col-xs-6 col-sm-4</div>
+				<div class="col-xs-6 col-sm-4 grid-colume">col-xs-6 col-sm-4</div>
+				<div class="col-xs-6 col-sm-4 grid-colume">col-xs-6 col-sm-4</div>
+			</div>
+		</article>
+		<hr/>
+		<article>
+			<h3>Column clearing</h3>
+			<p><a href="#">Clear floats</a> at specific breakpoints to prevent awkward wrapping with uneven content.</p>
+			<div class="row">
+				<div class="col-xs-6 col-sm-3 grid-colume">col-xs-6 col-sm-3<br/>Resize your viewport or check it out on your phone for an example.</div>
+				<div class="col-xs-6 col-sm-3 grid-colume">col-xs-6 col-sm-3</div>
+				<div class="clearfix visible-xs-block"></div>
+				<div class="col-xs-6 col-sm-3 grid-colume">col-xs-6 col-sm-3</div>
+				<div class="col-xs-6 col-sm-3 grid-colume">col-xs-6 col-sm-3</div>
+			</div>
+		</article>
+		<hr/>
+		<article>
+			<h3>Offset, push, and pull resets</h3>
+			<p>Reset offsets, pushes, and pulls at specific breakpoints.</p>
+			<div class="row">
+				<div class="col-sm-5 col-md-6 grid-colume">col-sm-5 col-md-6</div>
+				<div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0 grid-colume">col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0</div>
+			</div>
+			<div class="empty"></div>
+			<div class="row">
+				<div class="col-sm-6 col-md-5 col-lg-6 grid-colume">col-sm-6 col-md-5 col-lg-6</div>
+				<div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0 grid-colume">col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0</div>
+			</div>
+		</article>
+	</div>
+</div>
+
+<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+<script>window.jQuery || document.write('<script src="js_library/jquery.min.js"><\/script>')</script>
+<script src="js/bootstrap-practice5.min.js" type="text/javascript"></script>
+
+</body>
+</html>
